@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      // backgroundImage: {
+      //   "experience": "url('/public/experience_background.png')",
+      // }
     },
   },
   plugins: [],
