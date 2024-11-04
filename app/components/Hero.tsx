@@ -5,7 +5,7 @@ import Work from "@/public/work.png"
 const Hero = () => {
   return (
     <>
-      <div>
+      <div className="lg:h-[85vh]">
         <div className="flex flex-col lg:flex-row">
           <div className="flex flex-col relative lg:w-[50%] ml-10 lg:mx-20 my-10 lg:my-20 h-96 justify-center">
             <h1 className="text-[34px] lg:text-[60px] font-black lg:font-bold ml-10 lg:ml-16 z-10">WE BUILD YOUR DREAM</h1>
