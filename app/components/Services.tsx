@@ -19,9 +19,9 @@ const Services = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-y-10 lg:gap-x-20 my-10">
-          <div className="flex flex-col w-[380px] py-6 h-auto items-center shadow-xl">
-            <div className="flex w-[95px] h-[95px] justify-center items-center rounded-full bg-[#EE4036]">
-              <Icon icon="fluent-emoji-high-contrast:building-construction" width="48" height="48" color="#FFFFFF" />
+          <div className="flex flex-col w-[340px] py-6 px-4 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
+            <div className="flex w-[90px] h-[90px] justify-center items-center rounded-full bg-[#EE4036]">
+              <Icon icon="fluent-emoji-high-contrast:building-construction" width="40" height="40" color="#FFFFFF" />
             </div>
             <h4 className="text-[17px] font-bold my-6">CIVIL AND CONSTRUCTION</h4>
             <p className="text-center">Techplus offers construction services from design to 
@@ -33,24 +33,24 @@ const Services = () => {
               <Icon icon="lsicon:right-filled" width="24" height="24" />
             </Link>
           </div>
-          <div className="flex flex-col w-[380px] py-6 h-auto items-center shadow-xl">
-            <div className="flex w-[95px] h-[95px] justify-center items-center rounded-full bg-[#EE4036]">
-            <Icon icon="mingcute:high-voltage-power-line" width="48" height="48" color="#FFFFFF" />
+          <div className="flex flex-col w-[340px] py-6 px-4 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
+            <div className="flex w-[90px] h-[90px] justify-center items-center rounded-full bg-[#EE4036]">
+            <Icon icon="mingcute:high-voltage-power-line" width="40" height="40" color="#FFFFFF" />
             </div>
             <h4 className="text-[17px] font-bold my-6 text-center">ELECTRICAL INSTALLATION & MAINTENANCE</h4>
             <p className="text-center">Our team is capapble of undertaking electrical projects that 
-              cover a wide range from 240V to 66KV.</p>
+              cover a wide scale from 240V to 66KV.</p>
             <Link href="/services" className="flex mt-6 font-semibold">
               <p>Read More</p>
               <Icon icon="lsicon:right-filled" width="24" height="24" />
             </Link>
           </div>
-          <div className="flex flex-col w-[380px] py-6 h-auto items-center shadow-xl">
-            <div className="flex w-[95px] h-[95px] justify-center items-center rounded-full bg-[#EE4036]">
-              <Icon icon="maki:communications-tower" width="48" height="48" color="#FFFFFF"/>
+          <div className="flex flex-col w-[340px] py-6 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
+            <div className="flex w-[90px] h-[90px] justify-center items-center rounded-full bg-[#EE4036]">
+              <Icon icon="maki:communications-tower" width="40" height="40" color="#FFFFFF"/>
             </div>
             <h4 className="text-[17px] font-bold my-6">TELECOMMUNICATION</h4>
-            <p className="text-center">We offer a wide range of services in the telecommunications sector</p>
+            <p className="text-center">We offer a diverse range of services in the telecommunications sector</p>
             <Link href="/services" className="flex mt-6 font-semibold">
               <p>Read More</p>
               <Icon icon="lsicon:right-filled" width="24" height="24" />
