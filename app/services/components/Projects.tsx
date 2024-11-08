@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const PROJECTS = [
   {
-    title: "Contruction of dam and storage tank",
+    title: "Construction of dam and storage tank",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
@@ -58,6 +58,7 @@ const Projects = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [fade, setFade] = useState("fade-in");
 
+  //Create a use-effect to change the image every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setFade("fade-out");
@@ -71,8 +72,8 @@ const Projects = () => {
 
   return (
     <>
-      <div className="relative flex flex-col items-center bg-black h-screen">
-        <div className="flex flex-row items-center my-10">
+      <div className="flex flex-col items-center bg-black pb-10">
+        <div className="flex flex-row items-center my-6 lg:my-10">
           <div className="flex flex-col items-end gap-y-3 mr-1">
             <div className="w-[65px] h-[2px] bg-[#F89E3E]"></div>
             <div className="w-[40px] h-[2px] bg-[#F89E3E]"></div>
@@ -85,24 +86,26 @@ const Projects = () => {
             <div className="w-[40px] h-[2px] bg-[#F89E3E]"></div>
           </div>
         </div>
-        <section className="relative flex flex-col lg:flex-row w-full">
-          <div className="flex flex-col lg:w-[40%] bg-white ml-6 px-1 shadow-lg"> 
-            <h2 className="font-bold text-[14px] lg:text-[20px] lg:my-3 text-center">{PROJECTS[0].title}</h2>
-            <p className="my-3">{PROJECTS[0].description}</p>
-          </div>
-          <div className="bg-pink-500">
-            {PROJECTS[0].images.map((pic, index) => (
-              <div key={index} className={`absolute transition-opacity w-full duration-1000 ease-in-out 
-                ${index === currentImage ? "opacity-100" : "opacity-0"}`}>
-                <Image src={pic.pic} alt={PROJECTS[0].title} width={300} height={300} 
-                  className={` object-contain ${fade}`} />
+        {PROJECTS.map((project, index) => (
+          <section key={index} className="relative flex flex-col items-center">
+            <div className="flex flex-col lg:flex-row items-center h-[130vh] lg:h-[90vh]">
+              <div className="flex flex-col justify-center lg:w-[50%] bg-white mx-4 lg:mx-0 lg:ml-16 shadow-lg rounded-md"> 
+                <h2 className="font-bold text-[18px] lg:text-[24px] m-3 text-center">{project.title}</h2>
+                <p className="m-6">{project.description}</p>
               </div>
-            ))}
-          </div>
-          
-        
-
-        </section>
+              <div className="flex flex-col lg:justify-center align-middle items-center bg-pink-500 lg:w-[50%]">
+                {project.images.map((pic, index) => (
+                  <div key={index} className={`absolute transition-opacity duration-1000 ease-in-out 
+                    ${index === currentImage ? "opacity-100" : "opacity-0"}`}>
+                    <Image src={pic.pic} alt={PROJECTS[0].title} width={600} height={600} 
+                      className={`w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] object-contain my-10 ${fade}`} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <hr className="w-[90%] h-1 bg-[#F89E3E] border-0 rounded my-4 lg:my-0"></hr>
+          </section>
+        ))}
       </div>
     </>
   );
