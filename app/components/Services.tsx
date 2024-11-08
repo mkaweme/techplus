@@ -28,7 +28,7 @@ const Services = () => {
               commissioning. We have an expert team of civil engineers, technicians and 
               bricklayers. 
             </p>
-            <Link href="/services" className="flex mt-6 font-semibold">
+            <Link href="/services#construction" className="flex mt-6 font-semibold">
               <p>Read More</p>
               <Icon icon="lsicon:right-filled" width="24" height="24" />
             </Link>
@@ -38,11 +38,11 @@ const Services = () => {
             <Icon icon="mingcute:high-voltage-power-line" width="40" height="40" color="#FFFFFF" />
             </div>
             <h4 className="text-[17px] font-bold my-6 text-center">ELECTRICAL INSTALLATION & MAINTENANCE</h4>
-            <p className="text-center">Our team is capapble of undertaking electrical projects that 
-              cover a wide scale from 240V to 66KV.</p>
-            <Link href="/services" className="flex mt-6 font-semibold">
+            <p className="text-center">Our team is capapble of undertaking electrical projects 
+              that cover a wide scale from 240V to 66KV.</p>
+            <Link href="/services#electrical" className="flex mt-6 font-semibold">
               <p>Read More</p>
-              <Icon icon="lsicon:right-filled" width="24" height="24" />
+              <Icon icon="lsicon:right-filled" width="24" height="24"/>
             </Link>
           </div>
           <div className="flex flex-col w-[340px] py-6 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
@@ -51,7 +51,7 @@ const Services = () => {
             </div>
             <h4 className="text-[17px] font-bold my-6">TELECOMMUNICATION</h4>
             <p className="text-center">We offer a diverse range of services in the telecommunications sector</p>
-            <Link href="/services" className="flex mt-6 font-semibold">
+            <Link href="/services#telecommunication" className="flex mt-6 font-semibold">
               <p>Read More</p>
               <Icon icon="lsicon:right-filled" width="24" height="24" />
             </Link>
