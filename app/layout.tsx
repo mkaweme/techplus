@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Contact_Bar from "./components/Contact_Bar";
 
 export const metadata: Metadata = {
   title: "Techplus Industrial Solutions",
@@ -27,9 +28,12 @@ export default function RootLayout({
         className={`${poppins.variable} $antialiased`}
       >
         <header>
+          <Contact_Bar />
         </header>
         <main>
-          <Navbar />
+          <div className="sticky top-0 z-30">
+            <Navbar />
+          </div>
           {children}
         </main>
         <Footer/>
