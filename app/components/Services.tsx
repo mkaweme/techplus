@@ -1,4 +1,5 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import React from "react";
+import { Icon } from "@iconify/react";
 import Link from "next/link";
 
 const Services = () => {
