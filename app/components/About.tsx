@@ -20,7 +20,7 @@ const About = () => {
         <div className="flex flex-row relative">
           <div className="absolute top-36 -left-16 border-[20px] border-[#57575744] w-48 lg:w-[480PX] h-96 z-0"></div>
           <Image src="/about.jpeg" alt="about" width={800} height={800} className="w-[400px] lg:w-[800px] z-10" />
-          <div className="absolute bg-white lg:w-[40%] p-4 mx-6 lg:mx-0 h-72 lg:h-96 top-52 lg:top-32 lg:-right-48 z-20">
+          <div className="absolute bg-white lg:w-[40%] p-4 mx-6 lg:mx-0 h-72 lg:h-96 top-52 lg:top-32 lg:-right-48 z-10">
             <h1 className="text-[27px] font-bold">Commitment to excellence</h1>
             <p className="text-[14px] font-medium my-5">We are a team with integrity, professionalism and abide
               by the ethical codes of project management
