@@ -37,6 +37,7 @@ const Footer = () => {
       <div className="flex flex-col lg:w-[25%] text-white gap-y-3">
         <h3 className="text-[22px] font-bold my-6">LINKS</h3>
         <Link href="/services" className="border-dashed border-b-2 border-[#FFFFFF56] pb-3">Services</Link>
+        <Link href="/services#projects" className="border-dashed border-b-2 border-[#FFFFFF56] pb-3">Projects</Link>
         <Link href="/about" className="border-dashed border-b-2 border-[#FFFFFF56] pb-3">About</Link>
         <Link href="/contact">Contact Us</Link>
       </div>
