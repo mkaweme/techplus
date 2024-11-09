@@ -23,7 +23,7 @@ const Experience = () => {
           </p>
           <div className="mt-4">
             <p className="text-[18px] font-semibold">Eng. Albert M. Nkandu</p>
-            <p className="text-[14px] font-light">Founder and M.D</p>
+            <p className="text-[14px] font-light italic">Founder and M.D</p>
           </div>
         </div>
       </div>
