@@ -34,13 +34,13 @@ const Projects = () => {
         setCurrentImage((prev) => (prev + 1) % PROJECTS.length);
         setFade("fade-in");
       }, 1000);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
-      <div className="relative flex flex-col items-center bg-black h-screen">
+      <div className="relative flex flex-col items-center bg-black h-screen" id="projects">
         <div className="flex flex-row items-center my-10">
           <div className="flex flex-col items-end gap-y-3 mr-1">
             <div className="w-[65px] h-[2px] bg-[#F89E3E]"></div>
