@@ -2,7 +2,12 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-const PROJECTS = [
+type Project = {
+  title: string;
+  pic: string;
+}
+
+const PROJECTS: Project[] = [
   {
     title: "Marking out items in preparation for metal working",
     pic: "/about.jpeg",
