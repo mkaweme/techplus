@@ -88,17 +88,17 @@ const Projects = () => {
         </div>
         {PROJECTS.map((project, index) => (
           <section key={index} className="relative flex flex-col items-center">
-            <div className="flex flex-col lg:flex-row items-center h-[130vh] lg:h-[90vh]">
+            <div className="flex flex-col lg:flex-row items-center h-[120vh] lg:h-[90vh]">
               <div className="flex flex-col justify-center lg:w-[50%] bg-white mx-4 lg:mx-0 lg:ml-16 shadow-lg rounded-md"> 
                 <h2 className="font-bold text-[18px] lg:text-[24px] m-3 text-center">{project.title}</h2>
                 <p className="m-6">{project.description}</p>
               </div>
-              <div className="flex flex-col lg:justify-center align-middle items-center bg-pink-500 lg:w-[50%]">
+              <div className="flex flex-col lg:justify-center align-middle items-center lg:w-[50%]">
                 {project.images.map((pic, index) => (
                   <div key={index} className={`absolute transition-opacity duration-1000 ease-in-out 
                     ${index === currentImage ? "opacity-100" : "opacity-0"}`}>
                     <Image src={pic.pic} alt={PROJECTS[0].title} width={600} height={600} 
-                      className={`w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] object-contain my-10 ${fade}`} />
+                      className={`w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] object-contain my-3 lg:my-10 ${fade}`} />
                   </div>
                 ))}
               </div>
