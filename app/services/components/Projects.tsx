@@ -66,7 +66,7 @@ const Projects = () => {
         setCurrentImage((prev) => (prev + 1) % PROJECTS.length);
         setFade("fade-in");
       }, 1000);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
