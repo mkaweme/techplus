@@ -2,7 +2,14 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-const PROJECTS = [
+type Project = {
+  title: string;
+  description: string;
+  type: string;
+  images: { pic: string }[];
+};
+
+const PROJECTS: Project[] = [
   {
     title: "Construction of dam and storage tank",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
