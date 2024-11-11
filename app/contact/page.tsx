@@ -20,11 +20,12 @@ const Contact = () => {
       <div className='flex justify-center items-center w-[90%] h-[400px] border-[14px] border-[#F89E3E]'>
          <h1>LOCATION</h1>
       </div>
-      <div className="flex flex-col lg:flex-row lg:gap-x-6 w-full mt-14 mx-20 justify-center text-[14px] text-[#626262]">
+      <div className="flex flex-col lg:flex-row lg:gap-x-5 w-full mt-14 mx-20 justify-center text-[14px] text-[#626262]">
         <div className="relative flex flex-col lg:w-[15%] items-center pt-16 border-[1px] p-3 my-9 mx-12 lg:m-3 h-40">
           <Icon icon="mdi:location" width="100" height="100" color="#F89E3E" className="absolute border-[1px] p-6 rounded-full -top-12 bg-white"/>
           <h6 className="my-1 text-black font-semibold">Office location</h6>
-          <p>Plot 1080, Off Nationalsit Road</p>
+          <p>Plot 1080</p>
+          <p>Off Nationalsit Road</p>
           <p>Lusaka</p>
         </div>
         <div className="relative flex flex-col lg:w-[15%] items-center pt-16 border-[1px] p-3 my-9 mx-12 lg:m-3 h-40">
@@ -32,7 +33,7 @@ const Contact = () => {
             <Icon icon="mdi:clock" width="50" height="50" color="#F89E3E"/>
           </div>
           <h1 className="my-1 text-black font-semibold">Office Hours</h1>
-          <p >Mon-Fri: 08:00 - 17:00Hrs</p>
+          <p>Mon-Fri: 08:00 - 17:00Hrs</p>
           <p>Sat: 08:00 - 12:30Hrs</p>
           <p>Sun: Closed</p>
         </div>
