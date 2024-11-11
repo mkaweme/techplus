@@ -39,7 +39,7 @@ const Services = () => {
             <Icon icon="mingcute:high-voltage-power-line" width="40" height="40" color="#FFFFFF" />
             </div>
             <h4 className="text-[17px] font-bold my-6 text-center">ELECTRICAL INSTALLATION & MAINTENANCE</h4>
-            <p className="text-center">Our team is capapble of undertaking electrical projects 
+            <p className="text-center">Our team is capable of undertaking electrical projects 
               that cover a wide scale from 240V to 66KV.</p>
             <Link href="/services#electrical" className="flex mt-6 font-semibold">
               <p>Read More</p>
