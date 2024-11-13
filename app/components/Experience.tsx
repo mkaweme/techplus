@@ -17,12 +17,14 @@ const Experience = () => {
             <p className="font-bold text-[22px]">Years of Experience</p>
           </div>
           <h3 className="text-[32px] font-bold my-4">Our Commitment to our customers</h3>
-          <p className="text-[17px]">We are dedicated to providing top-notch goods and services while upholding the 
-            highest standards of ethics, professionalism, and client care. We make use of available
-            resources, uphold strategic alliances, and constantly meet deadlines.
+          <p className="text-[17px]">We have been operating for just about 5 years and have gathered wide experience
+            in carrying out various projects in different sectors such as Mining, Hospitals, General Construction, 
+            Power Generation plants, Manufacturing, Telecommunications and Wood processing. Our experience allows us to 
+            provide top-notch goods and services while upholding the highest standards of ethics, professionalism, and 
+            client care.
           </p>
           <div className="mt-4">
-            <p className="text-[18px] font-semibold">Eng. Albert M. Nkandu</p>
+            <p className="text-[18px] font-semibold">Eng. Andrew Chasaya</p>
             <p className="text-[14px] font-light italic">Founder and M.D</p>
           </div>
         </div>
