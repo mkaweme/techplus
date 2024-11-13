@@ -6,8 +6,8 @@ import Footer from "./components/Footer";
 import Contact_Bar from "./components/Contact_Bar";
 
 export const metadata: Metadata = {
-  title: "Techplus Industrial Solutions",
-  description: "Techplus Engineering Solutions",
+  title: "Techplus Engineering Limited",
+  description: "Techplus Engineering Limited",
 };
 
 const poppins = Poppins({
