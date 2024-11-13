@@ -75,31 +75,47 @@ const About = () => {
             <div className="w-[30px] lg:w-[40px] h-[2px] bg-[#F89E3E]"></div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-around mb-10">
-          <div className="flex flex-col lg:w-[40%] py-6 px-4 h-auto items-center shadow-xl">
+        <div className="flex flex-col lg:flex-row justify-around mb-10 gap-y-6">
+          <div className="flex flex-col lg:w-[25%] py-6 px-4 h-auto items-center shadow-xl">
+            <div className="flex w-[200px] h-[200px] justify-center items-center rounded-full bg-black">
+              <Icon icon="mdi:user" width={100} height={100} color="white"/>
+            </div>
+            <h4 className="text-[17px] font-bold mt-4 text-center">ENG. ANDREW CHASAYA</h4>
+            <p className="text-[12px] lg:text-[14px] italic">MANAGING DIRECTOR</p>
+            <p className="text-[14px] text-justify mt-4">Joseph is a founding member of Techplus Engineering 
+              Limited and serves as it&apos;s Managing Director. He oversees operations of the 
+              company such as strategic planning and development. He holds a Bachelor&apos; 
+              Degree in Electrical Engineering from the Copperbelt University and has over 20 years
+              experience in Maintenance, Design, Operations, System studies, installation of equipment 
+              and Project Management in the Mining, General Construction, Power Generation plants, 
+              manufacturing and telecommunications sectors.
+            </p>
+          </div>
+          <div className="flex flex-col lg:w-[25%] py-6 px-4 h-auto items-center shadow-xl">
             <div className="flex w-[200px] h-[200px] justify-center items-center rounded-full bg-black">
               <Icon icon="mdi:user" width={100} height={100} color="white"/>
             </div>
             <h4 className="text-[17px] font-bold mt-4 text-center">ENG. ALBERT M. NKANDU</h4>
-            <p className="text-[12px] lg:text-[14px] italic">MANAGING DIRECTOR</p>
-            <p className="text-center my-4">Albert is a founding member of Techplus Engineering 
-              Limited and serves as it&apos;s Managing Director. He oversees all technical and 
-              administrative operations of the company. He holds a Bachelor&apos; Degree in
-              Electrical Enginnering from the Copperbelt University and has over 5 years
-              experience in mining and contracting sectors.
+            <p className="text-[12px] lg:text-[14px] italic">OPERATIONS DIRECTOR</p>
+            <p className="text-[14px] text-justify mt-4">Albert is a founding member of Techplus Engineering 
+              Limited and serves as it&apos;s Operations Director. He oversees all operational aspects
+              of the company such as coordinating logistics and supervising works. He holds a Bachelor&apos;s 
+              Degree in Electrical Engineering from the Copperbelt University and has over 5 years
+              experience in maintenance, design and installation of equipment in the Mining, Construction
+              and telecommunication sectors.
             </p>
           </div>
-          <div className="flex flex-col lg:w-[40%] py-6 px-4 h-auto items-center shadow-xl">
+          <div className="flex flex-col lg:w-[25%] py-6 px-4 h-auto items-center shadow-xl">
             <div className="flex w-[200px] h-[200px] justify-center items-center rounded-full bg-black">
               <Icon icon="mdi:user" width={100} height={100} color="white"/>
             </div>
             <h4 className="text-[17px] font-bold mt-4 text-center">ENG. JOSEPH YOKA</h4>
             <p className="text-[12px] lg:text-[14px] italic">TECHNICAL DIRECTOR</p>
-            <p className="text-center my-4">Joseph is a founding member of Techplus Engineering 
+            <p className="text-[14px] text-justify mt-4">Joseph is a founding member of Techplus Engineering 
               Limited and serves as it&apos;s Technical Director. He oversees all technical
-              operations of the company suh as approving designs and supervising works. He holds a Bachelor&apos; Degree in
-              Electrical Enginnering from the Copperbelt University and has over 5 years
-              experience in mining and contracting sectors.
+              operations of the company such as approving designs. He holds a Bachelor&apos;s Degree in
+              Electrical Engineering from the Copperbelt University and has over 5 years
+              experience in Mining, Construction and Manufacturing sectors.
             </p>
           </div>
         </div> 
