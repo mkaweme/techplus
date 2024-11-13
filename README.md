@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://techplus-p87t.vercel.app/">
     <img src="https://github.com/mkaweme/techplus/blob/master/app/favicon.ico"
-      width="60" height="60" alt="Xanga icon">
+      width="60" height="60" alt="Techplus logo">
   </a>
 </div>
 <h1 align="center">We are Techplus Engineering</h1>
