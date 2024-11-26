@@ -10,7 +10,7 @@ const Work = () => {
             <h3 className="text-[18px] lg:text-[22px] font-medium">Let&apos;s work together</h3>
             <h2 className="text-[24px] lg:text-[40px] text-white font-semibold">(+260)-976-055210</h2>
             <h3 className="text-[18px] lg:text-[22px] text-center font-medium">
-              Plot 1080, Off Nationalist Road, Kamwala South, Lusaka
+              Plot 002, Off Mungwi Road, Chikondano Lusaka West, Lusaka
             </h3>
             <div className="flex flex-row relative mt-8 lg:mt-8">
               <div className="absolute -top-2 -left-2">
