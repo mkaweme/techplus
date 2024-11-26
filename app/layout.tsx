@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400","500","700"],
-  variable: "--font-roboto",
+  variable: "--font-poppins",
 });
 
 export default function RootLayout({
@@ -29,11 +29,11 @@ export default function RootLayout({
       >
         <header>
           <Contact_Bar />
-        </header>
-        <main>
           <div className="sticky top-0 z-30">
             <Navbar />
           </div>
+        </header>
+        <main>
           {children}
         </main>
         <Footer/>
