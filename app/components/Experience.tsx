@@ -3,7 +3,6 @@ import Image from "next/image";
 
 const Experience = () => {
   return (
-    <>
       <div className="flex flex-col lg:flex-row m-10 lg:m-20">
         <div className="lg:relative lg:w-[40%] lg:pl-16">
           <div className="hidden lg:block bg-[#F89E3E] w-[270px] lg:w-[381px] h-[360px] lg:h-[481px] lg:absolute top-10 left-5 z-0"></div>
@@ -16,20 +15,22 @@ const Experience = () => {
             <h1 className="text-[#F89E3E] font-bold text-[60px] bg-[url(/experience_background.png)]">5</h1>
             <p className="font-bold text-[22px]">Years of Experience</p>
           </div>
-          <h3 className="text-[32px] font-bold my-4">Our Commitment to our customers</h3>
-          <p className="text-[17px]">We have been operating for just about 5 years and have gathered wide experience
+          <h3 className="text-[32px] font-bold my-4">Our commitment to our customers</h3>
+          <p className="text-[17px]">We have been operating for just about 5 years and have gathered good experience
             in carrying out various projects in different sectors such as Mining, Hospitals, General Construction, 
             Power Generation plants, Manufacturing, Telecommunications and Wood processing. Our experience allows us to 
             provide top-notch goods and services while upholding the highest standards of ethics, professionalism, and 
             client care.
           </p>
-          <div className="mt-4">
-            <p className="text-[18px] font-semibold">Eng. Andrew Chasaya</p>
-            <p className="text-[14px] font-light italic">Founder and M.D</p>
+          <div className="flex flex-col lg:flex-row items-center mt-4 mx-6 gap-x-6">
+            <Image src="/signature.png" alt="signature" width={150} height={50}/>
+            <div>
+              <p className="text-[18px] font-semibold">Eng. Andrew Chasaya</p>
+              <p className="text-[14px] font-light italic">Managing Director</p>
+            </div>
           </div>
         </div>
       </div>
-    </>
   );
 };
 
