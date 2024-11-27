@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { usePathname } from "next/navigation";
 
-type Navlink = {
+type navlink = {
   title: string;
   link: string;
 }
 
-const NAVLINKS: Navlink[] = [
+const NAVLINKS: navlink[] = [
   { title: "HOME", link: "/" },
   { title: "SERVICES", link: "/services" },
   { title: "ABOUT", link: "/about" },
@@ -20,13 +20,14 @@ const Navbar = () => {
 
   //Create state variables
   const [mNavOpen, setMNavOpen] = useState<boolean>(false);
-  const pathName = usePathname();
+
+
+  const pathName: string = usePathname();
 
   return (
-    <>
       <nav className="flex flex-col w-full z-20">
         <div className="flex flex-row w-full justify-between items-center lg:items-end bg-[#350F2B] z-10">
-          <Link href="/" className="ml-6">
+          <Link href="/" className="ml-8 lg:ml-20">
             <Image src="/logo.png" alt="logo" width={80} height={80} className="hidden lg:block"/>
             <Image src="/logo_mini.png" alt="logo" width={80} height={80} onClick={() => setMNavOpen(false)} className="block lg:hidden mr-10"/>
           </Link>
@@ -37,7 +38,7 @@ const Navbar = () => {
               <Icon icon="line-md:close-to-menu-transition" width="30" height="30" color="#D9D2D6" onClick={() => setMNavOpen(true)} className="lg:hidden cursor-pointer mr-5"/>
             )
           }
-          <div className="hidden lg:flex gap-x-20 mr-48 h-full">
+          <div className="hidden lg:flex gap-x-16 mr-20 h-full">
             {NAVLINKS.map((link, index) => {
               const isActive = pathName.endsWith(link.link);
               return (
@@ -54,7 +55,6 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-    </>
   );
 }
 
