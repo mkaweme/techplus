@@ -29,11 +29,11 @@ export default function RootLayout({
       >
         <header>
           <Contact_Bar />
+        </header>
+        <main>
           <div className="sticky top-0 z-30">
             <Navbar />
           </div>
-        </header>
-        <main>
           {children}
         </main>
         <Footer/>
