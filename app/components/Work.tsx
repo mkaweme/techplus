@@ -3,10 +3,9 @@ import Link from "next/link";
 
 const Work = () => {
   return (
-    <>
       <div className="flex my-32 items-center justify-center">
-        <div className="flex flex-col w-full lg:w-[1440px] h-[383px] bg-[url('/work_with_us.png')] bg-cover">
-          <div className="flex flex-col text-white gap-y-1 w-full lg:w-[1440px] h-[383px] justify-center items-center bg-[#F89E3E89]">
+        <div className="flex flex-col w-full h-[383px] bg-[url('/work_with_us.png')] bg-cover">
+          <div className="flex flex-col text-white gap-y-1 w-full h-[383px] justify-center items-center bg-[#F89E3E89]">
             <h3 className="text-[18px] lg:text-[22px] font-medium">Let&apos;s work together</h3>
             <h2 className="text-[24px] lg:text-[40px] text-white font-semibold">(+260)-976-055210</h2>
             <h3 className="text-[18px] lg:text-[22px] text-center font-medium">
@@ -28,7 +27,6 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 
