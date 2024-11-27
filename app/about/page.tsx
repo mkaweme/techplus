@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 const About = () => {
+
   return (
     <>
       <div className="flex flex-col items-center mx-4 lg:mx-24">
@@ -82,13 +83,12 @@ const About = () => {
             </div>
             <h4 className="text-[17px] font-bold mt-4 text-center">ENG. ANDREW CHASAYA</h4>
             <p className="text-[12px] lg:text-[14px] italic">MANAGING DIRECTOR</p>
-            <p className="text-[14px] text-justify mt-4">Joseph is a founding member of Techplus Engineering 
-              Limited and serves as it&apos;s Managing Director. He oversees operations of the 
-              company such as strategic planning and development. He holds a Bachelor&apos; 
-              Degree in Electrical Engineering from the Copperbelt University and has over 20 years
-              experience in Maintenance, Design, Operations, System studies, installation of equipment 
-              and Project Management in the Mining, General Construction, Power Generation plants, 
-              manufacturing and telecommunications sectors.
+            <p className="text-[14px] text-justify mt-4">Andrew is the Managing Managing Director of Techplus
+              Engineering Limited. He oversees operations of the company such as strategic planning and 
+              development. He holds a Bachelor&apos; Degree in Electrical Engineering from the Copperbelt 
+              University and has over 20 years experience in Maintenance, Design, Operations, System 
+              studies, installation of equipment and Project Management in the Mining, General Construction, 
+              Power Generation plants, manufacturing and telecommunications sectors.
             </p>
           </div>
           <div className="flex flex-col lg:w-[25%] py-6 px-4 h-auto items-center shadow-xl">
