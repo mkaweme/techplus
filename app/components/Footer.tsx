@@ -29,10 +29,9 @@ const Footer = () => {
       <div className="flex flex-col lg:w-[25%] text-white gap-y-3">
         <h3 className="text-[22px] font-bold my-6">CONTACT US</h3>
         <p>Plot 002, Off Mungwi Road, Chikondano Lusaka West, Lusaka</p>
-        <p>mushokenkandu3@gmail.com</p>
-        <p>josephyoka@gmail.com</p>
+        <p>techplusengineeringltd@gmail.com</p>
         <p>(+260)-976-055210</p>
-        <p>(+260)-974-963639</p>
+        <p>(+260)-974-963639</p> 
       </div>
       <div className="flex flex-col lg:w-[25%] text-white gap-y-3">
         <h3 className="text-[22px] font-bold my-6">LINKS</h3>
