@@ -50,7 +50,7 @@ Give a ⭐️ if this project is okay!
 
 ## Feedback
 
-I'm a new dev who's very open to feedback to give any feedback you think would make the project better.
+I'm a new dev who's very open to feedback so give any feedback you think would make the project or me as a developer better.
 
 
 ***
