@@ -29,9 +29,10 @@ const PROJECTS: Project[] = [
 const Projects = () => {
 
   //Create state variables for the current image and the fade
-  const [currentImage, setCurrentImage] = useState(0);
-  const [fade, setFade] = useState("fade-in");
+  const [currentImage, setCurrentImage] = useState<number>(0);
+  const [fade, setFade] = useState<string>("fade-in");
 
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setFade("fade-out");
@@ -68,7 +69,6 @@ const Projects = () => {
               <p className="text-white font-bold text-[14px] lg:text-[20px] lg:my-3 text-center">{project.title}</p>
             </div>
           ))}
-
         </div>
       </div>
     </>
