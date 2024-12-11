@@ -6,55 +6,46 @@ type Project = {
   title: string;
   description: string;
   type: string;
-  images: { pic: string }[];
+  images: { pic: string, title: string }[];
 };
 
-const PROJECTS: Project[] = [
+export const PROJECTS: Project[] = [
   {
-    title: "Construction of dam and storage tank",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-      anim id est laborum.`,
-    type: "construction",
+    title: "Installation of 315KVA mini-substation",
+    description: `This project involved the design and implementation of 315KVA mini-substation
+     at Dr Javia's Medical Center situated opposite University Teaching Hospital at stand 
+     number 9564, Nationalist Road in Lusaka. The project included installing a 315KVA 
+     transformer, Ring Main Unit (RMU) and 400A ZESCO type Feeder-Pillar.`,
+    type:"electrical",
     images: [
-    { pic: "/about.jpeg" },
-    { pic: "/construction.png" },
-    { pic: "/construction_2.png" },
+    { pic: "/dr_javias/completed_substation.jpg", title: "Complete and Energised 315KVA Substation" },
+    { pic: "/dr_javias/civil_works.jpg", title: "Civil Works" },
+    { pic: "/dr_javias/tx_inspection.jpg", title: "Transformer Inspections" },
+    { pic: "/dr_javias/rmu_inspection.jpg", title: "Ring Main Unit Inspections" },
+    { pic: "/dr_javias/rmu_inspection_2.jpg", title: "Ring Main Unit Inspections" },
+    { pic: "/dr_javias/rmu_terminations.jpg", title: "Ring Main Unit Cable Terminations" },
+    { pic: "/dr_javias/tx_terminations.jpg", title: "Transformer Cable Terminations" },
+    { pic: "/dr_javias/feeder_pillar.jpg", title: "400A ZESCO type Feeder-Pillar" },
+    { pic: "/dr_javias/rmu_room.jpg", title: "Ring Main Unit Room" },
+    { pic: "/dr_javias/tx_room.jpg", title: "Transformer Room" },
     ],
   },
   {
-    title: "100 meter bridge contruction in Luanshya",
-    description: `Suspendisse lacinia erat a fringilla ornare. Sed lobortis ipsum eu metus 
-      blandit, sed tincidunt metus congue. Morbi quis turpis eget justo efficitur laoreet. Cras 
-      eget purus lorem. Donec cursus, tellus ut feugiat volutpat, est dui hendrerit est, nec 
-      porttitor dui velit non lacus. Maecenas vel enim mi. In eget eros finibus, viverra eros et, 
-      efficitur augue. Phasellus tempor facilisis diam eu gravida. Donec convallis est a aliquet 
-      maximus.`,
-    type: "construction",
-    images: [
-      { pic: "/experience.jpg" },
-      { pic: "/project_1.jpg" },
-      { pic: "/project_2.jpg" },
-    ]
-  },
-  {
-    title: "Installation of 45KW solar grid in Mumbwa",
-    description: `Donec sed dui tincidunt, ullamcorper lacus at, fermentum libero. Mauris 
-      laoreet sagittis urna et lobortis. Quisque ut augue consectetur, malesuada quam eget, 
-      facilisis tortor. Phasellus dapibus magna non tincidunt laoreet. Curabitur volutpat in dui
-      ac ornare. Fusce eu ultrices magna. Vivamus quis felis turpis. Integer faucibus 
-      sollicitudin sollicitudin. In commodo tempor turpis ac dignissim. Phasellus sollicitudin 
-      orci vel ligula pulvinar, nec vehicula nunc ornare. Vivamus ac lobortis sem, quis ultrices
-      est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-      curae; Pellentesque ornare urna eros, sed pretium lorem sollicitudin quis.`,
+    title: "Swapping of 200KVA and 500KVA Transformers at Damust Farms",
+    description: `This project involved the swapping of 2 transformers, a 200KVA and a 500KVA 
+    transformer at Damust Farms in Mkushi. Both transformers are located at the pump house 2.`,
     type: "electrical",
     images: [
-      { pic: "/electrical.png" },
-      { pic: "/telecommunication.png" },
-      { pic: "/telecommunication_2.png" },
+      { pic: "/damust_farms/completed_work.jpg", title: "Completed Works" },
+      { pic: "/damust_farms/site_inspection_1.jpg", title: "Site Inspections" },
+      { pic: "/damust_farms/site_inspection_2.jpg", title: "Site Inspections" },
+      { pic: "/damust_farms/cable_preparation.jpg", title: "Cable Preparation (Terminations)" },
+      { pic: "/damust_farms/200kva_tx_before.jpg", title: "200KVA Transformer at the workshop before swapping" },
+      { pic: "/damust_farms/500kva_tx_before.jpg", title: "500KVA Transformer at Pump Station 2 before swapping" },
+      { pic: "/damust_farms/500kva_tx_offloading.jpg", title: "Offloading 500KVA Transformer at the workshop" },
+      { pic: "/damust_farms/500kva_tx_terminations.jpg", title: "Terminations works onthe 500KVA transformer works" },
+      { pic: "/damust_farms/200kva_tx_loading.jpg", title: "Loading 200KVA Transformer to be installed at Pump Station 2" },
+      { pic: "/damust_farms/final_inspection.jpg", title: "Inspecting final works at the workshop" },
     ]
   },
 ]
@@ -70,7 +61,7 @@ const Projects = () => {
     const interval = setInterval(() => {
       setFade("fade-out");
       setTimeout(() => {
-        setCurrentImage((prev) => (prev + 1) % PROJECTS.length);
+        setCurrentImage((prev) => (prev + 1) % PROJECTS[0].images.length);
         setFade("fade-in");
       }, 1000);
     }, 5000);
@@ -104,8 +95,9 @@ const Projects = () => {
                 {project.images.map((pic, index) => (
                   <div key={index} className={`absolute transition-opacity duration-1000 ease-in-out 
                     ${index === currentImage ? "opacity-100" : "opacity-0"}`}>
-                    <Image src={pic.pic} alt={PROJECTS[0].title} width={600} height={600} 
+                    <Image src={pic.pic} alt={pic.title} width={600} height={600} 
                       className={`w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] object-contain my-3 lg:my-10 ${fade}`} />
+                    <p className="text-[14px] text-white text-center">{pic.title}</p>
                   </div>
                 ))}
               </div>
