@@ -33,17 +33,19 @@ export const PROJECTS: Project[] = [
   {
     title: "Swapping of 200KVA and 500KVA Transformers at Damust Farms",
     description: `This project involved the swapping of 2 transformers, a 200KVA and a 500KVA 
-    transformer at Damust Farms in Mkushi. Both transformers are located at the pump house 2.`,
+    transformer at Damust Farms in Mkushi. The 200KVA transformer which was initially located at the workshop was uninstalled 
+    and moved to the pump station 2. The 500KVA transformer which was initially located at the pump station 2 was uninstalled 
+    and moved to the workshop.`,
     type: "electrical",
     images: [
-      { pic: "/damust_farms/completed_work.jpg", title: "Completed Works" },
+      { pic: "/damust_farms/completed_work.jpg", title: "Completed Works at the Pump Station 2" },
       { pic: "/damust_farms/site_inspection_1.jpg", title: "Site Inspections" },
       { pic: "/damust_farms/site_inspection_2.jpg", title: "Site Inspections" },
       { pic: "/damust_farms/cable_preparation.jpg", title: "Cable Preparation (Terminations)" },
       { pic: "/damust_farms/200kva_tx_before.jpg", title: "200KVA Transformer at the workshop before swapping" },
       { pic: "/damust_farms/500kva_tx_before.jpg", title: "500KVA Transformer at Pump Station 2 before swapping" },
       { pic: "/damust_farms/500kva_tx_offloading.jpg", title: "Offloading 500KVA Transformer at the workshop" },
-      { pic: "/damust_farms/500kva_tx_terminations.jpg", title: "Terminations works onthe 500KVA transformer works" },
+      { pic: "/damust_farms/500kva_tx_terminations.jpg", title: "Terminations works on the 500KVA transformer works" },
       { pic: "/damust_farms/200kva_tx_loading.jpg", title: "Loading 200KVA Transformer to be installed at Pump Station 2" },
       { pic: "/damust_farms/final_inspection.jpg", title: "Inspecting final works at the workshop" },
     ]
