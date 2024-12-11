@@ -9,20 +9,12 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    title: "Marking out items in preparation for metal working",
-    pic: "/about.jpeg",
+    title: "Installation of 315KVA mini-substation at Dr Javia's, Lusaka",
+    pic: "/dr_javias/completed_substation.jpg",
   },
   {
-    title: "Aligning metal rods",
-    pic: "/experience.jpg",
-  },
-  {
-    title: "Welding base plates during fabrication of metal supports",
-    pic: "/project_1.jpg",
-  },
-  {
-    title: "Oxyacetylene welding of joints during platform repair",
-    pic: "/project_2.jpg",
+    title: "Swapping of 200KVA and 500KVA Transformers at Damust Farms, Mkushi",
+    pic: "/damust_farms/completed_work.jpg",
   },
 ]
 
@@ -32,7 +24,7 @@ const Projects = () => {
   const [currentImage, setCurrentImage] = useState<number>(0);
   const [fade, setFade] = useState<string>("fade-in");
 
-  
+  //Create a use-effect to change the image every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setFade("fade-out");
