@@ -90,7 +90,7 @@ const About = () => {
               staff are composed of members with a wide range of expertise including bricklayers, electricians, plumbers and 
               other technicians and craftsmen.
             </p>
-            <Image src="/team.jpg" alt="team" width={756} height={697} className="w-[300px] lg:[500px] h-auto rounded-lg mt-12 lg:mt-0"/>
+            <Image src="/team.jpg" alt="team" width={756} height={697} className="w-[300px] lg:w-[500px] h-auto rounded-lg mt-12 lg:mt-0"/>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-around mb-10 gap-y-20">
