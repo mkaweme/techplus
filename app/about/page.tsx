@@ -97,7 +97,7 @@ const About = () => {
             <Image src="/chasaya.jpeg" alt="Joseph Yoka" width={1080} height={975} className="rounded-full w-[220px] h-[200px]"/>
             <h4 className="text-[17px] font-bold mt-4 text-center">ENG. ANDREW CHASAYA</h4>
             <p className="text-[12px] lg:text-[14px] italic">MANAGING DIRECTOR</p>
-            <p className="text-[14px] text-justify mt-4">Andrew is the Managing Managing Director of Techplus
+            <p className="text-[14px] text-justify mt-4">Andrew is the Managing Director of Techplus
               Engineering Limited. He oversees operations of the company such as strategic planning and 
               development. He holds a Bachelor&apos; Degree in Electrical Engineering from the Copperbelt 
               University and has over 20 years experience in Maintenance, Design, Operations, System 
