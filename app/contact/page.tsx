@@ -43,8 +43,9 @@ const Contact = () => {
             <Icon icon="ic:baseline-phone" width="50" height="50" color="#F89E3E"/>
           </div>
           <h1 className="text-black my-1 font-semibold">Call Us</h1>
-          <p>+260 974963639</p>
+          <p>+260 977369442</p>
           <p>+260 976055210</p>
+          <p>+260 974963639</p>
         </div>
         <div className="relative flex flex-col lg:w-[18%] items-center pt-16 border-[1px] p-3  my-9 mx-12 lg:m-3 h-48">
           <div className="absolute border-[1px] p-6 rounded-full -top-12 bg-white">
