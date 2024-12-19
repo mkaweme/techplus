@@ -1,5 +1,4 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 
 const About = () => {
@@ -107,9 +106,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex flex-col lg:w-[25%] py-6 px-6 h-auto items-center shadow-xl">
-            <div className="flex w-[200px] h-[200px] justify-center items-center rounded-full bg-black">
-              <Icon icon="mdi:user" width={100} height={100} color="white"/>
-            </div>
+            <Image src="/nkandu.jpeg" alt="Albert Nkandu" width={498} height={454} className="rounded-full w-[200px] h-[200px] object-cover"/>
             <h4 className="text-[17px] font-bold mt-4 text-center">ENG. ALBERT M. NKANDU</h4>
             <p className="text-[12px] lg:text-[14px] italic">OPERATIONS DIRECTOR</p>
             <p className="text-[14px] text-justify mt-4">Albert is a founding member of Techplus Engineering 
