@@ -5,7 +5,7 @@ const Experience = () => {
   return (
       <div className="flex flex-col lg:flex-row justify-between m-10 lg:m-20">
         <div className="lg:relative lg:w-[30%] lg:pl-16">
-          <div className="hidden lg:block bg-[#F89E3E] w-[300px] h-[383px] lg:absolute top-10 left-5 z-0"></div>
+          <div className="hidden lg:block bg-[#F89E3E] w-[300px] h-[383px] lg:h-[420px] lg:absolute top-10 left-5 z-0"></div>
           <div className="lg:absolute z-10 border-[14px] lg:border-0 border-[#F89E3E]">
             <Image src="/experience.jpg" alt="experience" width={533} height={680} className="w-[533px] h-auto"/>
           </div>
