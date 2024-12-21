@@ -98,8 +98,8 @@ const About = () => {
             <h4 className="text-[17px] font-bold mt-4 text-center">ENG. ANDREW CHASAYA</h4>
             <p className="text-[12px] lg:text-[14px] italic">MANAGING DIRECTOR</p>
             <p className="text-[14px] text-justify mt-4">Andrew is the Managing Director of Techplus
-              Engineering Limited. He oversees operations of the company such as strategic planning and 
-              development. He holds a Bachelor&apos; Degree in Electrical Engineering from the Copperbelt 
+              Engineering Limited. He oversees operations of the company such as strategic planning, finance, administration and 
+              business development. He holds a Bachelor&apos; Degree in Electrical Engineering from the Copperbelt 
               University and has over 20 years experience in Maintenance, Design, Operations, System 
               studies, installation of equipment and Project Management in the Mining, General Construction, 
               Power Generation plants, manufacturing and telecommunications sectors.
@@ -110,7 +110,7 @@ const About = () => {
             <h4 className="text-[17px] font-bold mt-4 text-center">ENG. ALBERT M. NKANDU</h4>
             <p className="text-[12px] lg:text-[14px] italic">OPERATIONS DIRECTOR</p>
             <p className="text-[14px] text-justify mt-4">Albert is a founding member of Techplus Engineering 
-              Limited and serves as it&apos;s Operations Director. He oversees all operational aspects
+              Limited and serves as it&apos;s Operations Director. He oversees operational aspects
               of the company such as coordinating logistics and supervising works. He holds a Bachelor&apos;s 
               Degree in Electrical Engineering from the Copperbelt University and has over 5 years
               experience in maintenance, design and installation of equipment in the Mining, Construction
@@ -123,8 +123,8 @@ const About = () => {
             <p className="text-[12px] lg:text-[14px] italic">TECHNICAL DIRECTOR</p>
             <p className="text-[14px] text-justify mt-4">Joseph is a founding member of Techplus Engineering 
               Limited and serves as it&apos;s Technical Director. He oversees all technical
-              operations of the company such as approving designs. He holds a Bachelor&apos;s Degree in
-              Electrical Engineering from the Copperbelt University and has over 5 years
+              operations of the company&apos;s operations such as approving designs, ensuring regulatory compliance and adherance to industry
+              standards. He holds a Bachelor&apos;s Degree in Electrical Engineering from the Copperbelt University and has over 5 years
               experience in Mining, Construction and Manufacturing sectors.
             </p>
           </div>
