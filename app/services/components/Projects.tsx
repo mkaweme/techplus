@@ -72,7 +72,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center bg-black pb-10">
+      <div id="projects" className="flex flex-col items-center bg-black pb-10">
         <div className="flex flex-row items-center my-6 lg:my-10">
           <div className="flex flex-col items-end gap-y-3 mr-1">
             <div className="w-[65px] h-[2px] bg-[#F89E3E]"></div>
