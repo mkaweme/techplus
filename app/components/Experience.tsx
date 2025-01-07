@@ -15,12 +15,15 @@ const Experience = () => {
             <h1 className="text-[#F89E3E] font-bold text-[60px] bg-[url(/experience_background.png)]">5</h1>
             <p className="font-bold text-[22px]">Years of Experience</p>
           </div>
-          <h3 className="text-[30px] font-bold my-2">Our commitment to our customers</h3>
-          <p className="text-[17px]">We have been operating for 5 years and have gathered experience in carrying
-            out projects in different sectors such as Mining, Medicine, Construction, Power Generation plants
-            Manufacturing, Telecommunications and Wood processing. Our experience allows us to provide top-notch
-            goods and services while upholding the highest standards of ethics, professionalism, and client
-            care.
+          <h3 className="text-[30px] font-bold my-2">Commitment to our customers</h3>
+          <p className="text-[14px]">With over five years (05) of operational expertise, our organization has cultivated a 
+            diverse portfolio of project experience spanning multiple industries, including mining, healthcare, 
+            construction, power generation, manufacturing, telecommunications, and wood processing. This 
+            broad-based experience has enabled us to develop a unique understanding of the complex challenges and 
+            opportunities inherent to each sector, allowing us to deliver bespoke solutions that meet the highest 
+            standards of quality, reliability, and client satisfaction. Our commitment to excellence is underscored by our 
+            adherence to rigorous ethical principles, unwavering professionalism, and a client-centric approach that 
+            prioritizes tailored support and exceptional service delivery.
           </p>
         </div>
         <div className="flex flex-col lg:w-[30%] mt-10 lg:mt-0 lg:mb-32 items-center">
