@@ -1,21 +1,31 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { Icon } from "@iconify/react";
 
 type Project = {
   title: string;
-  description: string;
+  description_1: string;
+  description_2: string;
+  scope: string[],
   type: string;
   images: { pic: string, title: string }[];
 };
 
 export const PROJECTS: Project[] = [
   {
-    title: "Installation of 315KVA mini-substation",
-    description: `This project involved the design and implementation of 315KVA mini-substation
-     at Dr Javia's Medical Center situated opposite University Teaching Hospital at stand 
-     number 9564, Nationalist Road in Lusaka. The project included installing a 315KVA 
-     transformer, Ring Main Unit (RMU) and 400A ZESCO type Feeder-Pillar.`,
+    title: "Installation of a 315kVA, 11/0.4kV Transformer GMT – indoor type complete with an 11kV Ring Main Unit (RMU)",
+    description_1: `This project encompassed the detailed design, procurement, and installation of a 315kVA, 11/0.4kV Ground
+     Mounted Transformer (GMT) indoor type at Dr. Javia's Medical Center, located at Stand Number 9564, Nationalist Road, 
+     Lusaka, adjacent to the University Teaching Hospital. `,
+    description_2: `The project was executed in accordance with industry best practices, incorporating rigorous quality 
+      control measures to guarantee a high-quality, reliable, and safe electrical infrastructure solution, tailored to 
+      support the medical center's operations and patient care services. `,
+     scope: [
+      "Substation design and installation of a 315kVA transformer, configured to meet the medical center's electrical load requirements, ensuring reliable and efficient power distribution.",
+      "Supply and installation of a three-way Ring Main Unit (RMU), facilitating need transformer protection, flexible and secure electrical distribution, with provision for future expansion and maintenance.",
+      "Installation of a 400A ZESCO-type Feeder-Pillar, enabling safe and efficient connection to the national grid, while ensuring compliance with relevant electrical standards and regulations.",
+    ],
     type:"electrical",
     images: [
     { pic: "/dr_javias/completed_substation.jpg", title: "Complete and Energised 315KVA Substation" },
@@ -32,10 +42,16 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Swapping of 200KVA and 500KVA Transformers at Damust Farms",
-    description: `This project involved the swapping of 2 transformers, a 200KVA and a 500KVA 
-    transformer at Damust Farms in Mkushi. The 200KVA transformer which was initially located at the workshop was uninstalled 
-    and moved to the pump station 2. The 500KVA transformer which was initially located at the pump station 2 was uninstalled 
-    and moved to the workshop.`,
+    description_1: `This project entailed the strategic relocation and replacement of two electrical transformers at Damust 
+      Farms in Mkushi, involving a meticulous swap of a 200kVA and a 500kVA transformer. The scope of work comprised:`,
+    description_2: `The transformer swap was executed in a systematic and controlled manner, ensuring minimal disruption to 
+      farm operations and maintaining the integrity of the electrical distribution system. The project required precise 
+      planning, coordination, and technical expertise to guarantee a safe, efficient, and successful relocation of the 
+      transformers, ultimately enhancing the overall electrical infrastructure and power supply reliability at Damust Farms.`,
+    scope: [
+      "Decommissioning and dismantling of the existing 200kVA transformer structure from its initial location at the workshop, followed by its careful transportation and reinstallation at Pump Station 2",
+      "Decommissioning and dismantling of the existing 500kVA transformer structure from its initial location at Pump Station 2, followed by its careful transportation and reinstallation at the workshop",
+    ],
     type: "electrical",
     images: [
       { pic: "/damust_farms/completed_work.jpg", title: "Completed Works at the Pump Station 2" },
@@ -88,10 +104,17 @@ const Projects = () => {
         </div>
         {PROJECTS.map((project, index) => (
           <section key={index} className="relative flex flex-col items-center">
-            <div className="flex flex-col lg:flex-row items-center h-[105vh] lg:h-[90vh]">
-              <div className="flex flex-col justify-center lg:w-[50%] bg-white mx-4 lg:mx-0 lg:ml-16 shadow-lg rounded-md"> 
-                <h2 className="font-bold text-[18px] lg:text-[24px] m-3 text-center">{project.title}</h2>
-                <p className="m-6">{project.description}</p>
+            <div className="flex flex-col lg:flex-row items-center h-[160vh] lg:h-[90vh]">
+              <div className="flex flex-col text-[15px] justify-center lg:w-[50%] bg-white mx-4 lg:mx-0 lg:ml-16 shadow-lg rounded-md"> 
+                <h2 className="font-bold text-[18px] lg:text-[22px] m-3 text-center">{project.title}</h2>
+                <p className="mx-6 my-2">{project.description_1}</p>
+                <p className="mx-6 my-2">The scope of the project included:</p>
+                <ul className="mx-6">
+                  {project.scope.map((scopeItem, index) => (
+                    <li key={index} className="flex flex-row"><Icon icon="icon-park-outline:dot" width="24" height="24" />{scopeItem}</li>
+                  ))}
+                </ul>
+                <p className="mx-6 my-2">{project.description_2}</p>
               </div>
               <div className="flex flex-col lg:justify-center align-middle items-center lg:w-[50%]">
                 {project.images.map((pic, index) => (
@@ -99,7 +122,7 @@ const Projects = () => {
                     ${index === currentImage ? "opacity-100" : "opacity-0"}`}>
                     <Image src={pic.pic} alt={pic.title} width={600} height={600} 
                       className={`w-[300px] lg:w-[500px] h-[400px] lg:h-[500px] object-contain my-3 lg:my-10 ${fade}`} />
-                    <p className="text-[14px] text-white text-center">{pic.title}</p>
+                    <p className="text-[14px] font-semibold text-white text-center">{pic.title}</p>
                   </div>
                 ))}
               </div>
