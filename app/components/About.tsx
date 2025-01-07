@@ -20,14 +20,14 @@ const About = () => {
         <div className="flex flex-row relative">
           <div className="absolute top-36 -left-16 border-[20px] border-[#57575744] w-48 lg:w-[480PX] h-96 z-0"></div>
           <Image src="/about.jpeg" alt="about" width={800} height={800} className="w-[400px] lg:w-[800px] z-10" />
-          <div className="absolute bg-white lg:w-[40%] p-4 mx-6 lg:mx-0 h-72 lg:h-96 top-52 lg:top-32 lg:-right-48 z-10">
+          <div className="flex flex-col justify-center absolute bg-white lg:w-[40%] p-4 mx-6 lg:mx-0 h-90 lg:h-96 top-52 lg:top-32 lg:-right-48 z-10">
             <h1 className="text-[27px] font-bold">Commitment to excellence</h1>
-            <p className="text-[14px] font-medium my-5">We are a team with integrity, professionalism and abide
-              by the ethical codes of project management.
-            </p>
-            <p className="text-[14px]">
-              Customer satisfaction is our utmost priority coupled with efficient use
-              of materials to meet our business goals.
+            <p className="text-[13px] font-medium my-5">Our team is guided by a steadfast commitment to integrity, 
+              professionalism, and adherence to the ethical standards outlined in the Project Management Institute&apos;s
+              (PMI) Code of Ethics. We prioritize customer satisfaction as our paramount objective, leveraging lean 
+              principles and resource optimization techniques to ensure the efficient utilization of materials and resources. 
+              By aligning our project delivery with strategic business objectives, we strive to drive operational excellence, 
+              enhance stakeholder value, and foster long-term partnerships.
             </p>
           </div>
         </div>
