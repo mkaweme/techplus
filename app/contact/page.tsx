@@ -52,7 +52,7 @@ const Contact = () => {
             <Icon icon="uiw:mail" width="50" height="50" color="#F89E3E"/>
           </div>
           <h1 className="text-black my-1 font-semibold">Email Us</h1>
-          <p>techplusengineeringltd@gmail.com</p>
+          <p>info@techplus.co.zm</p>
         </div>
       </div>
     </div>
