@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="flex flex-col lg:flex-row justify-around px-6 lg:px-0 py-10 bg-gradient-to-t from-[#EE4036] to-[#000000DE]" >
       <div className="flex flex-col lg:w-[25%] gap-y-4">
         <Link href="/">
-          <Image src="/logo_mini.png" alt="logo" width={100} height={100} />
+          <Image src="/logo_mini.png" alt="logo" width={378} height={320} className="w-[100px] h-auto"/>
         </Link>
         <p className="text-white">We love to hear from you. You can reach out to us on our social media platforms</p>
         <div className="flex flex-row lg:mt-4 gap-x-4">
@@ -29,7 +29,7 @@ const Footer = () => {
       <div className="flex flex-col lg:w-[25%] text-white gap-y-3">
         <h3 className="text-[22px] font-bold my-6">CONTACT US</h3>
         <p>Plot 002, Off Mungwi Road, Chikondano Lusaka West, Lusaka</p>
-        <p>techplusengineeringltd@gmail.com</p>
+        <p>info@techplus.co.zm</p>
         <p>(+260)-977-369442</p>
         <p>(+260)-976-055210</p>
         <p>(+260)-974-963639</p>
