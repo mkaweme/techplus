@@ -27,9 +27,9 @@ const Experience = () => {
           </p>
         </div>
         <div className="flex flex-col lg:w-[30%] mt-10 lg:mt-0 lg:mb-32 items-center">
-          <Image src="/chasaya_md.jpeg" alt="chasaya_md" width={300} height={300} className="rounded-md"/>
+          <Image src="/chasaya_md.jpeg" alt="chasaya_md" width={841} height={1019} className="w-[300px] h-auto rounded-md"/>
           <div className="flex flex-col lg:flex-row items-center mt-4 gap-x-6">
-            <Image src="/signature.png" alt="signature" width={150} height={50}/>
+            <Image src="/signature.png" alt="signature" width={709} height={461} className="w-[150px] h-auto"/>
             <div>
               <p className="text-[18px] font-semibold">Eng. Andrew Chasaya</p>
               <p className="text-[14px] font-light italic">Managing Director</p>
