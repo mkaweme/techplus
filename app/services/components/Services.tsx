@@ -111,7 +111,7 @@ const Services_Section = () => {
             </p>
           </div>
           <div>
-            <Image src="/electrical.png" alt="electrical_intallation" width={500} height={500} className="border-[6px] lg:border-[14px] border-[#F89E3E]"/>
+            <Image src="/electrical.jpeg" alt="electrical_intallation" width={500} height={500} className="border-[6px] lg:border-[14px] border-[#F89E3E]"/>
           </div>
         </div>
       </section>
