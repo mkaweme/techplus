@@ -20,8 +20,8 @@ const About = () => {
               <div className="w-[30px] lg:w-[40px] h-[2px] bg-[#F89E3E]"></div>
             </div>
           </div>
-          <p className="text-center">Techplus Engineering Limited, a Zambian-owned company which excels as industrial 
-            suppliers and contractors, specializing in Electrical, Civil, Mechanical, 
+          <p className="text-center">Techplus Engineering Limited is a fully Zambian-owned company which
+            excels as an industrial supplier and contractor, specializing in Electrical, Civil, Mechanical, 
             Telelcommunication, IT services and general supply of goods and services. Our reputation
             is built on trust, professionalism and superior performance, driven by directors with 
             high-level expertise. We strictly adhere to quality checks, safety regulations, and 
@@ -85,7 +85,7 @@ const About = () => {
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-x-10 my-6">
             <p className="text-center lg:text-left">We have a fully qualified and dedicated team with vast experience in a wide range of sectors. We understand that 
-              our clients desire excellent service delivery and that is why we take every effort to his the right people. Our 
+              our clients desire excellent service delivery and that is why we take every effort to hire the right people. Our 
               staff are composed of members with a wide range of expertise including bricklayers, electricians, plumbers and 
               other technicians and craftsmen.
             </p>
