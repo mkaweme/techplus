@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <div className="flex flex-col items-center bg-black h-screen">
+      <div className="flex flex-col items-center bg-black h-[105vh]">
         <div className="flex flex-row items-center">
           <div className="flex flex-col justify-center lg:justify-end pt-3 lg:pt-0 items-end mr-1 w-[50px] h-[40px]">
             <hr className="w-full color-white h-2"/>
@@ -19,8 +19,8 @@ const About = () => {
         </div>
         <div className="flex flex-row relative">
           <div className="absolute top-36 -left-16 border-[20px] border-[#57575744] w-48 lg:w-[480PX] h-96 z-0"></div>
-          <Image src="/about.jpeg" alt="about" width={800} height={800} className="w-[400px] lg:w-[800px] z-10" />
-          <div className="flex flex-col justify-center absolute bg-white lg:w-[40%] p-4 mx-6 lg:mx-0 h-90 lg:h-96 top-52 lg:top-32 lg:-right-48 z-10">
+          <Image src="/about.jpeg" alt="about" width={1600} height={994} className="w-[350px] lg:w-[800px] h-auto z-10" />
+          <div className="flex flex-col justify-center absolute bg-white lg:w-[40%] p-4 mx-6 lg:mx-0 h-90 lg:h-96 top-48 lg:top-32 lg:-right-48 z-10">
             <h1 className="text-[27px] font-bold">Commitment to excellence</h1>
             <p className="text-[13px] font-medium my-5">Our team is guided by a steadfast commitment to integrity, 
               professionalism, and adherence to the ethical standards outlined in the Project Management Institute&apos;s
