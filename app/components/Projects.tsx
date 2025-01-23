@@ -5,16 +5,22 @@ import Image from "next/image";
 type Project = {
   title: string;
   pic: string;
+  w: number;
+  h: number;
 }
 
 const PROJECTS: Project[] = [
   {
     title: "Installation of 315KVA mini-substation at Dr Javia's, Lusaka",
     pic: "/dr_javias/completed_substation.jpg",
+    w: 624,
+    h: 828,
   },
   {
     title: "Swapping of 200KVA and 500KVA Transformers at Damust Farms, Mkushi",
     pic: "/damust_farms/completed_work.jpg",
+    w: 624,
+    h: 790,
   },
 ]
 
@@ -56,7 +62,7 @@ const Projects = () => {
           {PROJECTS.map((project, index) => (
             <div key={index} className={`absolute transition-opacity w-full duration-1000 ease-in-out 
               ${index === currentImage ? "opacity-100" : "opacity-0"}`}>
-              <Image src={project.pic} alt={project.title} width={500} height={500} 
+              <Image src={project.pic} alt={project.title} width={project.w} height={project.h} 
                 className={`w-full h-[500px] object-contain ${fade}`} />
               <p className="text-white font-bold text-[14px] lg:text-[20px] lg:my-3 text-center">{project.title}</p>
             </div>
