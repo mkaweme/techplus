@@ -12,13 +12,13 @@ const Footer = () => {
         </Link>
         <p className="text-white">We love to hear from you. You can reach out to us on our social media platforms</p>
         <div className="flex flex-row lg:mt-4 gap-x-4">
-          <a href="https://www.facebook.com" aria-label="link to facebook" className="flex w-[40px] h-[40px] justify-center items-center border-[1px] border-[#00000045]">
+          <a href="https://web.facebook.com/p/Techplus-Engineering-Limited-100064281394107/?_rdc=1&_rdr#" aria-label="link to facebook page" className="flex w-[40px] h-[40px] justify-center items-center border-[1px] border-[#00000045]">
             <Icon icon="ri:facebook-fill" width="30" height="30" color="#F89E3E" />
           </a>
           <a href="https://www.x.com" aria-label="link to twitter" className="flex w-[40px] h-[40px] justify-center items-center border-[1px] border-[#00000045]">
             <Icon icon="pajamas:twitter" width="30" height="30" color="#F89E3E" />
           </a>
-          <a href="https://www.linkedin.com" aria-label="link to linkedin" className="flex w-[40px] h-[40px] justify-center items-center border-[1px] border-[#00000045]">
+          <a href="https://www.linkedin.com/in/techplus-engineering-limited-078140235/?originalSubdomain=zm" aria-label="link to linkedin profile" className="flex w-[40px] h-[40px] justify-center items-center border-[1px] border-[#00000045]">
             <Icon icon="ri:linkedin-fill" width="30" height="30" color="#F89E3E" />
           </a>
           <a href="https://www.instagram.com" aria-label="link to instagram" className="flex w-[40px] h-[40px] justify-center items-center border-[1px] border-[#00000045]">
