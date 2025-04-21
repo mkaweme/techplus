@@ -17,7 +17,7 @@ const Hero = () => {
             </p>
             <div className="absolute top-0 border-[20px] border-[#F89E3E] w-48 lg:w-72 h-96 z-0"></div>
           </div>
-          <Image src={Work} alt="work" className="px-8 lg:px-0 h-[25%] my-10 lg:mt-20"/>
+          <Image src={Work} alt="work" className="px-8 lg:px-0 h-[25%] my-10 lg:mt-20 justify-center content-center self-center"/>
         </div>
       </div>
     </>
