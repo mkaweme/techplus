@@ -7,7 +7,7 @@ const Experience = () => {
         <div className="lg:relative lg:w-[30%] lg:pl-16">
           <div className="hidden lg:block bg-[#F89E3E] w-[337px] h-[383px] lg:h-[430px] lg:absolute top-10 left-5 z-0"></div>
           <div className="lg:absolute z-10 border-[14px] lg:border-0 border-[#F89E3E]">
-            <Image src="/experience.jpg" alt="experience" width={533} height={680} className="w-[533px] h-auto"/>
+            <Image src="/experience.jpg" alt="experience" width={533} height={680} className="w-[533px] h-auto object-fit-cover"/>
           </div>
         </div>
         <div className="flex flex-col lg:w-[30%] mt-10 lg:mt-0 lg:mb-32 justify-start items-start">
