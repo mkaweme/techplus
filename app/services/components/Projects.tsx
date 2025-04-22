@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
 
 const Projects = () => {
 
-  //Create state variables for the current image and the fade
+  //Define state variables for the current image and the fade
   const [currentImage, setCurrentImage] = useState(0);
   const [fade, setFade] = useState("fade-in");
 
@@ -87,8 +87,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <>
-      <div id="projects" className="flex flex-col items-center bg-black pb-10">
+      <div id="projects" className="flex flex-col items-center bg-black">
         <div className="flex flex-row items-center my-6 lg:my-10">
           <div className="flex flex-col items-end gap-y-3 mr-1">
             <div className="w-[65px] h-[2px] bg-[#F89E3E]"></div>
@@ -98,40 +97,42 @@ const Projects = () => {
             <span className="text-white font-bold"> PROJECTS</span>
           </h1>
           <div className="flex flex-col gap-y-3 ml-1">
-            <div className="w-[65px] h-[2px] bg-[#F89E3E]"></div>
+            <div className="w-[65px] h-[2px] bg-[#d29a5e]"></div>
             <div className="w-[40px] h-[2px] bg-[#F89E3E]"></div>
           </div>
         </div>
-        {PROJECTS.map((project, index) => (
-          <section key={index} className="relative flex flex-col items-center">
-            <div className="flex flex-col lg:flex-row items-center h-[160vh] lg:h-[90vh]">
-              <div className="flex flex-col text-[15px] justify-center lg:w-[50%] bg-white mx-4 lg:mx-0 lg:ml-16 shadow-lg rounded-md"> 
+        {PROJECTS.map((project, projectIndex) => (
+          <section key={projectIndex} className="flex flex-col items-center w-full">
+            <div className="flex flex-col lg:flex-row items-center w-full max-w-screen-xl">    
+              <div className="flex flex-col text-[15px] justify-center lg:w-1/2 bg-white mx-4 lg:mx-0 lg:ml-16 shadow-lg rounded-md p-6"> 
                 <h2 className="font-bold text-[18px] lg:text-[22px] m-3 text-center">{project.title}</h2>
-                <p className="mx-6 my-2">{project.description_1}</p>
-                <p className="mx-6 my-2">The scope of the project included:</p>
-                <ul className="mx-6">
-                  {project.scope.map((scopeItem, index) => (
-                    <li key={index} className="flex flex-row"><Icon icon="icon-park-outline:dot" width="24" height="24" />{scopeItem}</li>
+                <p className="mb-2">{project.description_1}</p>
+                <p className="mb-2">The scope of the project included:</p>
+                <ul className="list-none space-y-1">
+                  {project.scope.map((scopeItem, scopeIndex) => (
+                    <li key={scopeIndex} className="flex items-start gap-2">
+                      <Icon icon="icon-park-outline:dot" width="24" height="24" />
+                      <span>{scopeItem}</span>
+                    </li>
                   ))}
                 </ul>
-                <p className="mx-6 my-2">{project.description_2}</p>
+                <p className="mt-3">{project.description_2}</p>
               </div>
-              <div className="flex flex-col lg:justify-center align-middle items-center lg:w-[50%]">
-                {project.images.map((pic, index) => (
-                  <div key={index} className={`absolute transition-opacity duration-1000 ease-in-out 
-                    ${index === currentImage ? "opacity-100" : "opacity-0"}`}>
+              <div className="relative w-full lg:w-1/2 h-[400px] lg:h-[500px] flex justify-center items-center mt-8 lg:mt-0">
+                {project.images.map((pic, imageIndex) => (
+                  <div key={imageIndex} className={`absolute transition-opacity duration-1000 ease-in-out w-full flex flex-col items-center
+                    ${imageIndex === currentImage ? "opacity-100" : "opacity-0"}`}>
                     <Image src={pic.pic} alt={pic.title} width={600} height={600} 
-                      className={`w-[300px] lg:w-[500px] h-[400px] lg:h-[500px] object-contain my-3 lg:my-10 ${fade}`} />
-                    <p className="text-[14px] font-semibold text-white text-center">{pic.title}</p>
+                      className={`w-[90%] max-h-[400px] sm:max-h-[400px] lg:h-[500px] object-contain mb-2 ${fade}`} />
+                    <p className="text-xs lg:text-sm font-semibold text-white text-center">{pic.title}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <hr className="w-[90%] h-1 bg-[#F89E3E] border-0 rounded my-4 lg:my-0"></hr>
+            <hr className="w-[96%] mx-6 h-1 bg-[#F89E3E] border-0 rounded my-8 lg:my-0"></hr>
           </section>
         ))}
       </div>
-    </>
   );
 };
 

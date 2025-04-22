@@ -4,7 +4,6 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <>
       <div className="flex flex-col items-center">
         <div className="flex flex-row items-center">
           <div className="flex flex-col items-end gap-y-3 mr-1">
@@ -20,7 +19,7 @@ const Services = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-y-10 lg:gap-x-20 my-10">
-          <div className="flex flex-col w-[340px] py-6 px-4 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
+          <div className="flex flex-col w-[340px] md:w-[550px] lg:w-[340px] py-6 px-4 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
             <div className="flex w-[90px] h-[90px] justify-center items-center rounded-full bg-[#EE4036]">
               <Icon icon="fluent-emoji-high-contrast:building-construction" width="40" height="40" color="#FFFFFF" />
             </div>
@@ -34,7 +33,7 @@ const Services = () => {
               <Icon icon="lsicon:right-filled" width="24" height="24" />
             </Link>
           </div>
-          <div className="flex flex-col w-[340px] py-6 px-4 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
+          <div className="flex flex-col w-[340px] md:w-[550px] lg:w-[340px] py-6 px-4 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
             <div className="flex w-[90px] h-[90px] justify-center items-center rounded-full bg-[#EE4036]">
             <Icon icon="mingcute:high-voltage-power-line" width="40" height="40" color="#FFFFFF" />
             </div>
@@ -46,7 +45,7 @@ const Services = () => {
               <Icon icon="lsicon:right-filled" width="24" height="24"/>
             </Link>
           </div>
-          <div className="flex flex-col w-[340px] py-6 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
+          <div className="flex flex-col w-[340px] md:w-[550px] lg:w-[340px] py-6 h-auto items-center shadow-xl hover:text-white hover:bg-[#F89E3E]">
             <div className="flex w-[90px] h-[90px] justify-center items-center rounded-full bg-[#EE4036]">
               <Icon icon="maki:communications-tower" width="40" height="40" color="#FFFFFF"/>
             </div>
@@ -59,7 +58,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 

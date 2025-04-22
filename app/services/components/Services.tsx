@@ -58,7 +58,7 @@ const Services_Section = () => {
               evolving needs of our clients and stakeholders.
             </p>
           </div>
-          <div>
+          <div className="flex justify-center">
             <Image src="/construction.png" alt="Construction" width={500} height={500} className="border-[6px] lg:border-[14px] border-[#F89E3E]"/>
           </div>
         </div>
@@ -110,7 +110,7 @@ const Services_Section = () => {
               our clients across various industries.
             </p>
           </div>
-          <div>
+          <div className="flex justify-center">
             <Image src="/electrical.jpeg" alt="electrical_intallation" width={500} height={500} className="border-[6px] lg:border-[14px] border-[#F89E3E]"/>
           </div>
         </div>
@@ -160,7 +160,7 @@ const Services_Section = () => {
               communication networks.
             </p>
           </div>
-          <div>
+          <div className="flex justify-center">
             <Image src="/telecommunication.png" alt="electrical_intallation" width={500} height={500} className="border-[6px] lg:border-[14px] border-[#F89E3E]"/>
           </div>
         </div>

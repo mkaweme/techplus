@@ -47,7 +47,7 @@ const Navbar = () => {
           </div>
         </div>
         { mNavOpen && (
-          <div onClick={() => setMNavOpen(false)} className="bg-[#ffffffee]">
+          <div onClick={() => setMNavOpen(false)} className="bg-[#ffffff] bg-opacity-95">
             <MobileNavbar pathName={pathName}/>
           </div>
         )}

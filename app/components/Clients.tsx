@@ -18,7 +18,7 @@ const Clients = () => {
             <div className="w-[40px] h-[2px] bg-[#F89E3E]"></div>
           </div>
         </div>
-        <p className="text-[18px] mx-2 lg:mx-0 text-centermb-2">These are some of our esteemed clients.We take pride in the strong 
+        <p className="text-[18px] mx-2 lg:mx-0 text-center mb-2">These are some of our esteemed clients.We take pride in the strong 
           relationships we&apos;ve built with these exceptional companies.
         </p>
         <div className="grid grid-cols-3 lg:grid-cols-7 gap-10 lg:gap-20 mx-3 lg-0 items-center">
